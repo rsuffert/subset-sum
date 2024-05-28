@@ -2,11 +2,9 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 14, 22};
+        List<List<Integer>> solutions = SubsetSum.calculate(new int[]{2, 3, 5, 6, 8, 10}, 10);
 
-        List<List<Integer>> solutions = SubsetSum.calculate(numbers, 30);
-
-        System.out.println("Solutions found: ");
+        System.out.printf("Found %d solution(s):\n", solutions.size());
         int counter = 0;
         for (List<Integer> solution : solutions) {
             counter++;
